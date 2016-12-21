@@ -74,14 +74,14 @@ class Hangman:
 
 		
 	def allLettersGuessed(self):
-	"""Returns true if all letters in the word are successfully guessed"""
+		"""Returns true if all letters in the word are successfully guessed"""
 		for c in self.word:
 			if c not in self.correctLetters:
 				return False
 		return True
 	
 	def printHangman(self):
-	"""Prints the hangman figure to indicate guesses left"""
+		"""Prints the hangman figure to indicate guesses left"""
 		print("  |--|")
 		print("  |  |")
 		if(self.counter>0):
